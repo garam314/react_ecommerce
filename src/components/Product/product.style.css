@@ -1,13 +1,5 @@
-div div .card-img{
-    padding: 10px;
-    border-radius: 20px;
+.carousel-item img {
     object-fit: fill;
-}
-
-div div .card{
-    height: 100%;
-}
-
-div div .card .card-header{
-    height: 100%;
+    width: 100%;
+    margin: auto;
 }

@@ -1,26 +1,27 @@
 import { Card, Button } from 'react-bootstrap'
 import "./product.style.css"
+import CardCarousel from './CardCarousel.jsx'
 
 
 
 const Product = (props) => {
     const p = props.item
-    console.log(process.env)
-    return(
-            <Card>
-                <Card.Img src={p.image[0]}/>
-                <Card.Header>{p.description}
-                    <Card.Body>
-                        <Card.Title>
-                            {p.name}
-                        </Card.Title>
-                        <Card.Text>
-                            ${p.price}
-                        </Card.Text>
-                        <Button variant='info'>Detalle</Button>
-                    </Card.Body>
-                </Card.Header>
-            </Card>
+    return (
+        <Card>
+            <CardCarousel key={p.id} id_product={p.id} />
+            <Card.Img />
+            <Card.Header>{p.description}
+                <Card.Body>
+                    <Card.Title>
+                        {p.short_name}
+                    </Card.Title>
+                    <Card.Text>
+                        ${p.price}
+                    </Card.Text>
+                    <Button variant='info'>Detalle</Button>
+                </Card.Body>
+            </Card.Header>
+        </Card>
     )
 }
 
