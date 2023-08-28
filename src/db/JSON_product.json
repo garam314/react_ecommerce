@@ -1,0 +1,38 @@
+[
+    {
+        "id" : "pro_1",
+        "name" : "Eren Yeager",
+        "stock" : 10,
+        "description" : "Attack on Titan (Shingeki no Kyojin)",
+        "trademark" : "Max Factory",
+        "price" : "165.000",
+        "image" : ["images/pro_1/img_pro_1_1.webp", "images/pro_1/img_pro_1_2.webp"]
+    },
+    {
+        "id" : "pro_2",
+        "name" : "Nendoroid Hisoka (P-EX)",
+        "stock" : 5,
+        "description" : "Hunter X Hunter",
+        "trademark" : "Good Smile Company",
+        "price" : "74.900",
+        "image" : ["images/pro_2/img_pro_2_1.webp", "images/pro_2/img_pro_2_2.webp"]
+    },
+    {
+        "id" : "pro_3",
+        "name" : "Legacy Art Kentaro Miura Berserk Guts 1/6 (P-EX)",
+        "stock" : 5,
+        "description" : "Berserk",
+        "trademark" : "Prime 1 Studio",
+        "price" : "899.900",
+        "image" : ["images/pro_3/img_pro_3_1.webp", "images/pro_3/img_pro_3_2.webp"]
+    },
+    {
+        "id" : "pro_4",
+        "name" : "B-STYLE Mitsuri Kanroji 1/4 (P-EX))",
+        "stock" : 5,
+        "description" : "Demon Slayer: Kimetsu no Yaiba",
+        "trademark" : "FREEing",
+        "price" : "424.900",
+        "image" : ["images/pro_4/img_pro_4_1.webp", "images/pro_4/img_pro_4_2.webp"]
+    }
+]
