@@ -4,6 +4,7 @@ import NavSubMenu from "./NavSubMenu";
 
 function NavMenu(props) {
   const { menu } = props;
+
   return (
     <>
       {menu.map((option) => {

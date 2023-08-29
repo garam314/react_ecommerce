@@ -7,11 +7,19 @@
             "submenu":[
                 {
                     "id": 11,
-                    "name" : "Figma"
+                    "name" : "Max Factory"
                 },
                 {
                     "id": 12,
-                    "name" : "Bandai"
+                    "name" : "Good Smile Company"
+                },
+                {
+                    "id": 13,
+                    "name" : "Prime 1 Studio"
+                },
+                {
+                    "id": 14,
+                    "name" : "FREEing"
                 }
             ]
         },
