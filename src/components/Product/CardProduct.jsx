@@ -11,7 +11,6 @@ const Product = (props) => {
   return (
     <Card>
       <CardCarousel key={p.id} id_product={p.id} />
-      <Card.Img />
       <Card.Header>
         {p.description}
         <Card.Body>

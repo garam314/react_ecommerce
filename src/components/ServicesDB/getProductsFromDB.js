@@ -15,10 +15,8 @@ export const getImageByID = async (id) => {
 
 export const getProductFiltered = async (filters = {}) => {
   const filtersArray = Object.entries(filters);
-
-  return products.filter((product) =>
-    filtersArray.every(
-      ([key, value]) => product[key] === value || value === undefined
-    )
-  );
+  const filter = products.filter((product) =>
+  filtersArray.every(([key, value]) => product[key].includes(value) || value === undefined || product.category.some(category => category.includes(value)))
+  ) 
+  return (filter)
 };

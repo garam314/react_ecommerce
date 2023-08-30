@@ -7,38 +7,50 @@
             "submenu":[
                 {
                     "id": 11,
-                    "name" : "Max Factory"
+                    "name" : "Max Factory",
+                    "filter" : "trademark"
                 },
                 {
                     "id": 12,
-                    "name" : "Good Smile Company"
+                    "name" : "Good Smile Company",
+                    "filter" : "trademark"
                 },
                 {
                     "id": 13,
-                    "name" : "Prime 1 Studio"
+                    "name" : "Prime 1 Studio",
+                    "filter" : "trademark"
                 },
                 {
                     "id": 14,
-                    "name" : "FREEing"
+                    "name" : "FREEing",
+                    "filter" : "trademark"
                 }
             ]
         },
         {
             "id":2,
-            "name" :   "Ofertas",
+            "name" :   "Categoria",
             "url" : "#",
             "submenu":[
                 {
                     "id": 21,
-                    "name" : "Del 20%"
+                    "name" : "Nendoroid",
+                    "filter" : "category"
                 },
                 {
                     "id": 22,
-                    "name" : "Del 40%"
+                    "name" : "Figma",
+                    "filter" : "category"
                 },
                 {
                     "id": 23,
-                    "name" : "Del 50%"
+                    "name" : "Preventa",
+                    "filter" : "category"
+                },
+                {
+                    "id": 24,
+                    "name" : "Figuras a Escala",
+                    "filter" : "category"
                 }
             ]
         },

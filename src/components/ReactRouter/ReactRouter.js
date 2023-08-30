@@ -7,7 +7,11 @@ const router = createBrowserRouter([
     element: <MainPage />,
   },
   {
-    path: "/:trademark",
+    path: "/trademark/:trademark",
+    element: <MainPage />,
+  },
+  {
+    path: "/category/:category",
     element: <MainPage />,
   },
 ]);

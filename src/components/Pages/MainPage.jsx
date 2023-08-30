@@ -7,7 +7,7 @@ import "./MainPage.css";
 function MainPage() {
   const filters = useParams();
   const { item } = useGetProductProps(filters);
-
+  
   return (
     <>
       <NavBar />

@@ -7,7 +7,6 @@ const CardCarousel = (props) => {
   const id_product = props.id_product;
 
   const { images } = useGetImagesProductsByID(id_product);
-
   return (
     <>
       <Carousel fade>
@@ -15,6 +14,7 @@ const CardCarousel = (props) => {
           <Carousel.Item key={img.img_id}>
             <img className="d-block" src={img.path_img} alt={img.img_id} />
           </Carousel.Item>
+         
         ))}
       </Carousel>
     </>
