@@ -1,0 +1,101 @@
+[
+    {
+        "id": "pro_1",
+        "name": "Eren Yeager",
+        "short_name": "Eren Yeager",
+        "stock": 3,
+        "description": "Attack on Titan (Shingeki no Kyojin)",
+        "trademark": "Max Factory",
+        "price": "165.000",
+        "category" : ["Figma", "Figuras a Escala"],
+        "serie" : "Attack on Titan"
+    },
+    {
+        "id": "pro_2",
+        "name": "Nendoroid Hisoka (P-EX)",
+        "short_name": "Nendoroid Hisoka",
+        "stock": 4,
+        "description": "Hunter X Hunter",
+        "trademark": "Good Smile Company",
+        "price": "74.900",
+        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
+        "serie" : "Hunter x Hunter"
+    },
+    {
+        "id": "pro_3",
+        "name": "Legacy Art Kentaro Miura Berserk Guts 1/6 (P-EX)",
+        "short_name": "Berserk Guts",
+        "stock": 6,
+        "description": "Berserk",
+        "trademark": "Prime 1 Studio",
+        "price": "899.900",
+        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
+        "serie" : "Berserk"
+    },
+    {
+        "id": "pro_4",
+        "name": "B-STYLE Mitsuri Kanroji 1/4 (P-EX)",
+        "short_name": "Mitsuri Kanroji",
+        "stock": 1,
+        "description": "Demon Slayer: Kimetsu no Yaiba",
+        "trademark": "FREEing",
+        "price": "424.900",
+        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
+        "serie" : "Kimetsu no Yaiba"
+    },
+    {
+        "id": "pro_5",
+        "name": "Nendoroid Yami Yugi (P-EX)",
+        "short_name": "Yami Yugi",
+        "stock": 3,
+        "description": "Yu-Gi-Oh! Duel Monsters",
+        "trademark": "Good Smile Company",
+        "price": "61.900",
+        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
+        "serie" : "Yu-Gi-Oh!"
+    },
+    {
+        "id": "pro_6",
+        "name": "Dark Magician Girl 1/7 (P-EX)",
+        "short_name": "Dark Magician Girl",
+        "stock": 4,
+        "description": "Yu-Gi-Oh! Duel Monsters",
+        "trademark": "Max Factory",
+        "price": "234.900",
+        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
+        "serie" : "Yu-Gi-Oh!"
+    },
+    {
+        "id": "pro_7",
+        "name": "Slifer the Sky Dragon (EEC)",
+        "short_name": "Slifer the Sky Dragon",
+        "stock": 2,
+        "description": "Yu-Gi-Oh! Duel Monsters",
+        "trademark": "Kotobukiya",
+        "price": "434.900",
+        "category" : ["Figuras a Escala", "Por Encargo"],
+        "serie" : "Yu-Gi-Oh!"
+    },
+    {
+        "id": "pro_8",
+        "name": "Nendoroid Master Chief (P-EX)",
+        "short_name": "Master Chief ",
+        "stock": 4,
+        "description": "Halo",
+        "trademark": "Good Smile Company",
+        "price": "79.900",
+        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
+        "serie" : "Halo"
+    },
+    {
+        "id": "pro_9",
+        "name": "Nendoroid Satoru Gojo: Tokyo Jujutsu High School Ver. (P-EX)",
+        "short_name": "Satoru Gojo: Tokyo High School",
+        "stock": 3,
+        "description": "Halo",
+        "trademark": "Good Smile Company",
+        "price": "65.900",
+        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
+        "serie" : "Jujutsu Kaisen"
+    }
+]
