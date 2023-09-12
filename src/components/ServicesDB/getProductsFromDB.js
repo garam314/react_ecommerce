@@ -1,20 +1,14 @@
-import products from "../../db/JSON_product.json";
-import images from "../../db/JSON_images_products.json";
+import {getAllProducts, getProduct} from '../../db/getFireStore.js'
 
-export const getAllProducts = async () => {
-  return products;
-};
-
-export const getProduct = async (trademark) => {
-  return products;
-};
 
 export const getImageByID = async (id) => {
-  return images.filter((image) => image.pro_id === id);
+  const img_pro = await getProduct(id)
+  return (img_pro[0].img)
 };
 
 export const getProductFiltered = async (filters = {}) => {
   const filtersArray = Object.entries(filters);
+  const products = await getAllProducts()
   const filter = products.filter((product) =>
   filtersArray.every(([key, value]) => product[key].includes(value) || value === undefined || product.category.some(category => category.includes(value)))
   ) 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getAllProducts } from '../ServicesDB/getProductsFromDB.js'
+import { getAllProducts } from '../../db/getFireStore'
 
 
 const useGetProducts = () => {

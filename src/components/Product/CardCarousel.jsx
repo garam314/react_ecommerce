@@ -11,8 +11,8 @@ const CardCarousel = (props) => {
     <>
       <Carousel fade>
         {images.map((img) => (
-          <Carousel.Item key={img.img_id}>
-            <img className="d-block" src={img.path_img} alt={img.img_id} />
+          <Carousel.Item key={img}>
+            <img className="d-block" src={img} alt={img} />
           </Carousel.Item>
          
         ))}
