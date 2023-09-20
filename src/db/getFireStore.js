@@ -14,36 +14,36 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 export const getAllProducts = async () => {
-    const db = getFirestore();
-    const refCollection = collection(db, "Products");
-  
-    try {
-      const querySnapshot = await getDocs(refCollection);
-      const data = querySnapshot.docs.map((doc) => doc.data());
-  
-      if (data.length === 0) {
-        console.log("No hay resultados.");
-      } 
-  
-      return data;
-    } catch (error) {
-      console.error("Error al obtener los datos:", error);
-      throw error;
+  const db = getFirestore();
+  const refCollection = collection(db, "Products");
+
+  try {
+    const querySnapshot = await getDocs(refCollection);
+    const data = querySnapshot.docs.map((doc) => doc.data());
+
+    if (data.length === 0) {
+      console.log("No hay resultados.");
     }
-  };
+
+    return data;
+  } catch (error) {
+    console.error("Error al obtener los datos:", error);
+    throw error;
+  }
+};
 
 
 export const getProduct = async (id_product) => {
-    const db = getFirestore();
-    const refDocs = collection(db, "Products");
+  const db = getFirestore();
+  const refDocs = collection(db, "Products");
 
-    const filtered = query(refDocs, where("id", "==", id_product))
-    try {
-        const querySnapshot = await getDocs(filtered);
-        const documents = querySnapshot.docs.map((doc) => doc.data());
-        return documents;
-      } catch (error) {
-        console.error('Error al obtener los documentos:', error);
-        throw error;
-      }
+  const filtered = query(refDocs, where("id", "==", id_product))
+  try {
+    const querySnapshot = await getDocs(filtered);
+    const documents = querySnapshot.docs.map((doc) => doc.data());
+    return documents;
+  } catch (error) {
+    console.error('Error al obtener los documentos:', error);
+    throw error;
+  }
 };

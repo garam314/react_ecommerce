@@ -1,19 +1,27 @@
 import { useEffect, useState } from 'react'
-import { getAllProducts } from '../../db/getFireStore'
+import { getProduct } from '../../db/getFireStore'
 
 
-const useGetProducts = () => {
+const useGetProductByID = (id) => {
     const [item, setItem] = useState([]);
+    const [isloading, setIsloading] = useState(true);
+    const [iserror, setIserror] = useState(false);
 
     useEffect(() => {
-        getAllProducts().then((e) => {
+        setIsloading(true)
+        setIserror(false)
+        getProduct(id).then((e) => {
             setItem(e)
-        });
-    }, []);
+        })
+            .catch(() => {
+                setIserror(true)
+            })
+            .finally(() => {
+                setIsloading(false)
+            })
+    }, [id]);
 
-    return {
-        item
-    };
+    return { isloading, iserror, item }
 };
 
-export default useGetProducts
+export default useGetProductByID

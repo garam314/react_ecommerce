@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import {insertData} from "./db/InsertData.js"
+// import { insertData } from "./db/InsertData.js"
 
 // insertData()
 

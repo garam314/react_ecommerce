@@ -4,106 +4,170 @@
         "name": "Eren Yeager",
         "short_name": "Eren Yeager",
         "stock": 3,
-        "description": "Attack on Titan (Shingeki no Kyojin)",
+        "description": "Eren Yeager, protagonista de 'Attack on Titan', lidera la lucha contra los titanes en un mundo aterrador lleno de misterios y giros impactantes.",
         "trademark": "Max Factory",
-        "price": "165.000",
-        "category" : ["Figma", "Figuras a Escala"],
-        "serie" : "Attack on Titan",
-        "img" : ["https://i.ibb.co/DwsknFQ/img-pro-1-1.png", "https://i.ibb.co/gD3hpW2/img-pro-1-2.png", "https://i.ibb.co/28FWGPP/img-pro-1-3.png"]
+        "price": 165000,
+        "category": [
+            "Figma",
+            "Figuras a Escala"
+        ],
+        "serie": "Attack on Titan",
+        "img": [
+            "https://i.ibb.co/DwsknFQ/img-pro-1-1.png",
+            "https://i.ibb.co/gD3hpW2/img-pro-1-2.png",
+            "https://i.ibb.co/28FWGPP/img-pro-1-3.png"
+        ]
     },
     {
         "id": "pro_2",
         "name": "Nendoroid Hisoka (P-EX)",
         "short_name": "Nendoroid Hisoka",
         "stock": 4,
-        "description": "Hunter X Hunter",
+        "description": "Hisoka, el enigmático cazador de tesoros de 'Hunter x Hunter', cautiva con su personalidad intrigante y su pasión por desafiar a oponentes formidables.",
         "trademark": "Good Smile Company",
-        "price": "74.900",
-        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
-        "serie" : "Hunter x Hunter",
-        "img" : ["https://i.ibb.co/pWLgffD/img-pro-2-1.png", "https://i.ibb.co/GvhDDm4/img-pro-2-2.png", "https://i.ibb.co/Cb91bzJ/img-pro-2-3.png"]
+        "price": 74900,
+        "category": [
+            "Nendoroid",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Hunter x Hunter",
+        "img": [
+            "https://i.ibb.co/pWLgffD/img-pro-2-1.png",
+            "https://i.ibb.co/GvhDDm4/img-pro-2-2.png",
+            "https://i.ibb.co/Cb91bzJ/img-pro-2-3.png"
+        ]
     },
     {
         "id": "pro_3",
         "name": "Legacy Art Kentaro Miura Berserk Guts 1/6 (P-EX)",
         "short_name": "Berserk Guts",
         "stock": 6,
-        "description": "Berserk",
+        "description": "Guts, el valiente protagonista de 'Berserk', desafía a demonios y destinos oscuros en su búsqueda de venganza y redención en un mundo brutal y sobrenatural.",
         "trademark": "Prime 1 Studio",
-        "price": "899.900",
-        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
-        "serie" : "Berserk",
-        "img" : ["https://i.ibb.co/Jz2kSV9/img-pro-3-1.png", "https://i.ibb.co/x19ZVRg/img-pro-3-2.png", "https://i.ibb.co/098gtWb/img-pro-3-3.png"]
+        "price": 899900,
+        "category": [
+            "Figuras a Escala",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Berserk",
+        "img": [
+            "https://i.ibb.co/Jz2kSV9/img-pro-3-1.png",
+            "https://i.ibb.co/x19ZVRg/img-pro-3-2.png",
+            "https://i.ibb.co/098gtWb/img-pro-3-3.png"
+        ]
     },
     {
         "id": "pro_4",
         "name": "B-STYLE Mitsuri Kanroji 1/4 (P-EX)",
         "short_name": "Mitsuri Kanroji",
         "stock": 1,
-        "description": "Demon Slayer: Kimetsu no Yaiba",
+        "description": "Mitsuri Kanroji, la encantadora y poderosa cazadora de demonios en 'Kimetsu no Yaiba', destaca por su dulzura y valentía en la lucha contra los demonios.",
         "trademark": "FREEing",
-        "price": "424.900",
-        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
-        "serie" : "Kimetsu no Yaiba",
-        "img" : ["https://i.ibb.co/3mSbnSx/img-pro-4-1.png", "https://i.ibb.co/sqmg33r/img-pro-4-2.png", "https://i.ibb.co/0f738cM/img-pro-4-3.png"]    },
+        "price": 424900,
+        "category": [
+            "Figuras a Escala",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Kimetsu no Yaiba",
+        "img": [
+            "https://i.ibb.co/3mSbnSx/img-pro-4-1.png",
+            "https://i.ibb.co/sqmg33r/img-pro-4-2.png",
+            "https://i.ibb.co/0f738cM/img-pro-4-3.png"
+        ]
+    },
     {
         "id": "pro_5",
         "name": "Nendoroid Yami Yugi (P-EX)",
         "short_name": "Yami Yugi",
         "stock": 3,
-        "description": "Yu-Gi-Oh! Duel Monsters",
+        "description": "Yami Yugi, el alter ego mágico y estratégico de Yugi Moto en 'Yu-Gi-Oh!', se enfrenta a desafíos de cartas y duelos emocionantes en busca de la victoria y la amistad.",
         "trademark": "Good Smile Company",
-        "price": "61.900",
-        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
-        "serie" : "Yu-Gi-Oh!",
-        "img" : ["https://i.ibb.co/wYj4J8T/img-pro-5-1.png", "https://i.ibb.co/j5PCLMT/img-pro-5-2.png", "https://i.ibb.co/gJftDzr/img-pro-5-3.png"]
+        "price": 61900,
+        "category": [
+            "Nendoroid",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Yu-Gi-Oh!",
+        "img": [
+            "https://i.ibb.co/wYj4J8T/img-pro-5-1.png",
+            "https://i.ibb.co/j5PCLMT/img-pro-5-2.png",
+            "https://i.ibb.co/gJftDzr/img-pro-5-3.png"
+        ]
     },
     {
         "id": "pro_6",
         "name": "Dark Magician Girl 1/7 (P-EX)",
         "short_name": "Dark Magician Girl",
         "stock": 4,
-        "description": "Yu-Gi-Oh! Duel Monsters",
+        "description": "Dark Magician Girl, la encantadora y poderosa hechicera mágica en 'Yu-Gi-Oh!', es la compañera leal del Mago Oscuro y una carta icónica en los duelos de cartas.",
         "trademark": "Max Factory",
-        "price": "234.900",
-        "category" : ["Figuras a Escala", "Preventa Express (P-EX)"],
-        "serie" : "Yu-Gi-Oh!",
-        "img" : ["https://i.ibb.co/q5C37pn/img-pro-6-1.png", "https://i.ibb.co/TqLj2ZK/img-pro-6-2.png", "https://i.ibb.co/DGKgFdv/img-pro-6-3.png"]
+        "price": 234900,
+        "category": [
+            "Figuras a Escala",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Yu-Gi-Oh!",
+        "img": [
+            "https://i.ibb.co/q5C37pn/img-pro-6-1.png",
+            "https://i.ibb.co/TqLj2ZK/img-pro-6-2.png",
+            "https://i.ibb.co/DGKgFdv/img-pro-6-3.png"
+        ]
     },
     {
         "id": "pro_7",
         "name": "Slifer the Sky Dragon (EEC)",
         "short_name": "Slifer the Sky Dragon",
         "stock": 2,
-        "description": "Yu-Gi-Oh! Duel Monsters",
+        "description": "Slifer the Sky Dragon, uno de los Tres Dioses Egipcios, es una temible carta de monstruo con poderes divinos que dominan los duelos de cartas en 'Yu-Gi-Oh!'.",
         "trademark": "Kotobukiya",
-        "price": "434.900",
-        "category" : ["Figuras a Escala", "Por Encargo"],
-        "serie" : "Yu-Gi-Oh!",
-        "img" : ["https://i.ibb.co/PMrFZ7G/img-pro-7-1.png", "https://i.ibb.co/m8gbTmJ/img-pro-7-2.png", "https://i.ibb.co/SQ096Zr/img-pro-7-3.png"]
+        "price": 434900,
+        "category": [
+            "Figuras a Escala",
+            "Por Encargo"
+        ],
+        "serie": "Yu-Gi-Oh!",
+        "img": [
+            "https://i.ibb.co/PMrFZ7G/img-pro-7-1.png",
+            "https://i.ibb.co/m8gbTmJ/img-pro-7-2.png",
+            "https://i.ibb.co/SQ096Zr/img-pro-7-3.png"
+        ]
     },
     {
         "id": "pro_8",
         "name": "Nendoroid Master Chief (P-EX)",
         "short_name": "Master Chief ",
         "stock": 4,
-        "description": "Halo",
+        "description": "Master Chief, el icónico super soldado Spartan en la saga 'Halo', lidera la lucha contra extraterrestres en un universo futurista lleno de batallas épicas y misterios.",
         "trademark": "Good Smile Company",
-        "price": "79.900",
-        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
-        "serie" : "Halo",
-        "img" : ["https://i.ibb.co/fvw0b85/img-pro-8-1.png", "https://i.ibb.co/gPGbdRK/img-pro-8-2.png", "https://i.ibb.co/gwNxsWP/img-pro-8-3.png"]
+        "price": 79900,
+        "category": [
+            "Nendoroid",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Halo",
+        "img": [
+            "https://i.ibb.co/fvw0b85/img-pro-8-1.png",
+            "https://i.ibb.co/gPGbdRK/img-pro-8-2.png",
+            "https://i.ibb.co/gwNxsWP/img-pro-8-3.png"
+        ]
     },
     {
         "id": "pro_9",
         "name": "Nendoroid Satoru Gojo: Tokyo Jujutsu High School Ver. (P-EX)",
         "short_name": "Satoru Gojo: Tokyo High School",
         "stock": 3,
-        "description": "Halo",
+        "description": "Satoru Gojo, el carismático y poderoso hechicero en 'Jujutsu Kaisen', destaca por su fuerza abrumadora y su actitud desenfadada en la lucha contra maldiciones.",
         "trademark": "Good Smile Company",
-        "price": "65.900",
-        "category" : ["Nendoroid", "Preventa Express (P-EX)"],
-        "serie" : "Jujutsu Kaisen",
-        "img" : ["https://i.ibb.co/8mq4QrW/img-pro-9-1.png", "https://i.ibb.co/48kYGPR/img-pro-9-2.png", "https://i.ibb.co/cCT6xBL/img-pro-9-3.png"]
+        "price": 65900,
+        "category": [
+            "Nendoroid",
+            "Preventa Express (P-EX)"
+        ],
+        "serie": "Jujutsu Kaisen",
+        "img": [
+            "https://i.ibb.co/8mq4QrW/img-pro-9-1.png",
+            "https://i.ibb.co/48kYGPR/img-pro-9-2.png",
+            "https://i.ibb.co/cCT6xBL/img-pro-9-3.png"
+        ]
     }
 ]

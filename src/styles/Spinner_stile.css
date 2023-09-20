@@ -1,0 +1,11 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Asegura que ocupe al menos el 100% del alto de la ventana */
+}
+
+.spinner {
+    text-align: center;
+}

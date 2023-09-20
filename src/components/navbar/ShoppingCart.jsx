@@ -1,12 +1,12 @@
 import { Cart } from "react-bootstrap-icons";
 import { Navbar, Nav } from "react-bootstrap";
+import "../../styles/Link_style.css"
 
 const NavShoppingCart = ({ total_items }) => {
   return (
-    <Navbar.Brand href="#" className="ms-auto">
+    <Navbar.Brand href="/checkout" className="ms-auto">
       <Nav.Item>
         <Cart id="cartshopping" />
-        {total_items > 0 && <span id="count-cartshopping">{total_items}</span>}
       </Nav.Item>
     </Navbar.Brand>
   );

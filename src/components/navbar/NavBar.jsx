@@ -22,7 +22,7 @@ function NavBar() {
           <Nav className="ml-auto">
             <NavMenu menu={menu.menu} />
           </Nav>
-          <NavShoppingCart total_items={2} />
+          <NavShoppingCart />
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,5 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainPage from "../Pages/MainPage";
+import DetailProduct from "../Pages/DetailProduct.jsx"
+import CarProvider from "../../Contexts/CartProvider"
+import Checkout from "../Pages/Checkout"
 
 const router = createBrowserRouter([
   {
@@ -14,10 +17,23 @@ const router = createBrowserRouter([
     path: "/category/:category",
     element: <MainPage />,
   },
+  {
+    path: "/product/:id",
+    element: <DetailProduct />
+  }
+  ,
+  {
+    path: "/checkout",
+    element: <Checkout />
+  }
 ]);
 
 const MenuRouter = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <CarProvider>
+      <RouterProvider router={router} />
+    </CarProvider>
+  )
 };
 
 export default MenuRouter;

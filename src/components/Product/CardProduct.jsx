@@ -1,6 +1,8 @@
 import { Card, Button } from "react-bootstrap";
-import "./product.style.css";
+import '../../styles/product.style.css'
 import CardCarousel from "./CardCarousel.jsx";
+import { Link } from 'react-router-dom'
+import { format_price } from '../../utils/utils.js'
 
 const Product = (props) => {
   // TODO: Change por destructruture item
@@ -12,11 +14,13 @@ const Product = (props) => {
     <Card>
       <CardCarousel key={p.id} id_product={p.id} />
       <Card.Header>
-        {p.description}
+        {p.serie}
         <Card.Body>
           <Card.Title>{p.short_name}</Card.Title>
-          <Card.Text>${p.price}</Card.Text>
-          <Button variant="info">Detalle</Button>
+          <Card.Text>{format_price(p.price)}</Card.Text>
+          <Link to={`/product/${p.id}`}>
+            <Button variant="info">Detalle</Button>
+          </Link>
         </Card.Body>
       </Card.Header>
     </Card>
