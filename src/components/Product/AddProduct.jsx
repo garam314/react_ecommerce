@@ -1,13 +1,13 @@
 import { Button, Form } from "react-bootstrap"
 import "../../styles/AddCar_style.css"
 import { useContext, useState } from "react"
-import { CarContext } from "../../Contexts/CartContext"
+import { CartContext } from "../../Contexts/CartContext"
 
 const AddProduct = (props) => {
     const [quantity, setQuantity] = useState(1)
     const { product } = props
 
-    const { add_product } = useContext(CarContext)
+    const { add_product } = useContext(CartContext)
     const stock = product.stock
 
 

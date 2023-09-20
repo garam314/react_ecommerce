@@ -1,44 +1,7 @@
-import { CarContext } from "./CartContext"
+import useLocalStorage from "../components/Hooks/useLocalStorage"
+import { CartContext } from "./CartContext"
 
-const CarProvider = ({ children }) => {
-
-    const add_product = (props) => {
-
-        const [epoc_exist, epoc] = get_epoc()
-
-        const item = {
-            id: props.id,
-            quantity: props.quantity,
-        }
-
-        if (epoc_exist) {
-            const items = JSON.parse(localStorage.getItem(epoc))
-            const product = items.find(item => item.id === props.id)
-            if (product) {
-                product.quantity = props.quantity
-            }
-            else {
-                items.push(item)
-            }
-            localStorage.setItem(epoc, JSON.stringify(items))
-        }
-        else {
-            localStorage.setItem(create_epoc(), JSON.stringify([item]))
-        }
-    }
-
-
-
-    const get_epoc = () => {
-        const storedValue = localStorage.getItem("epoc");
-        if (storedValue === null) {
-            return [false, storedValue]
-        }
-        else {
-            return [true, storedValue]
-        }
-    }
-
+const CartProvider = ({ children }) => {
 
     const create_epoc = () => {
         const currentTimestamp = Date.now();
@@ -47,13 +10,49 @@ const CarProvider = ({ children }) => {
         return epochInSeconds
     }
 
+    const get_epoc = () => {
+        const storedValue = localStorage.getItem("epoc");
+        if (storedValue === null) {
+            return create_epoc()
+        }
+        else {
+            return storedValue
+        }
+    }
+    
+    const epoc = get_epoc()
+    const [items, setItems] = useLocalStorage(epoc, [])
+
+    const add_product = (props) => {
+
+        const item = {
+            id: props.id,
+            quantity: props.quantity,
+        }
+        const product = items.find(item => item.id === props.id)
+        if (product) {
+            const tmp_item = items.map((i) =>{
+                if (i.id===product.id){
+                    return item
+                }
+                return i
+            })
+            setItems(tmp_item)
+        }
+        else {
+            setItems((i)=>{
+                return [item, ...i]
+            })
+        }
+    }
+
     return (
-        <CarContext.Provider
-            value={{ add_product, }}
+        <CartContext.Provider
+            value={{ add_product, items}}
         >
             {children}
-        </CarContext.Provider >
+        </CartContext.Provider >
     )
 }
 
-export default CarProvider
+export default CartProvider
