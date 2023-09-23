@@ -9,7 +9,7 @@ const NavShoppingCart = ({ total_items }) => {
   return (
     <Navbar.Brand href="/checkout" className="ms-auto">
       <Nav.Item>
-        {items.length}
+        <span id="count-cartshopping">{items.length}</span>
         <Cart id="cartshopping" />
       </Nav.Item>
     </Navbar.Brand>

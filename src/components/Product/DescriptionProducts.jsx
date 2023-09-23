@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import { format_price } from '../../utils/utils.js'
-import CarProvider from "../../Contexts/CartProvider.jsx"
 
 function DescriptionProducts(props = {}) {
     const { product } = props

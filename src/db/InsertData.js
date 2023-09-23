@@ -20,12 +20,12 @@ const productsCollection = collection(db, 'Products');
 
 export const insertData = async () => {
 
-    product.map((item)=>{
-        try {
-            const docRef = addDoc(productsCollection, item);
-            console.log('Documento agregado con ID:', docRef.id);
-          } catch (error) {
-            console.error('Error al agregar el documento:', error);
-          } 
-    })
+  product.map((item) => {
+    try {
+      const docRef = addDoc(productsCollection, item);
+      console.log('Documento agregado con ID:', docRef.id);
+    } catch (error) {
+      console.error('Error al agregar el documento:', error);
+    }
+  })
 }

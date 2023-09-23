@@ -1,0 +1,13 @@
+.img-mini {
+    max-width: 30%;
+    height: auto;
+    background-size: contain;
+}
+
+.container-void {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Asegura que ocupe al menos el 100% del alto de la ventana */
+}

@@ -19,7 +19,7 @@ const CartProvider = ({ children }) => {
             return storedValue
         }
     }
-    
+
     const epoc = get_epoc()
     const [items, setItems] = useLocalStorage(epoc, [])
 
@@ -28,11 +28,12 @@ const CartProvider = ({ children }) => {
         const item = {
             id: props.id,
             quantity: props.quantity,
+            price: props.price
         }
         const product = items.find(item => item.id === props.id)
         if (product) {
-            const tmp_item = items.map((i) =>{
-                if (i.id===product.id){
+            const tmp_item = items.map((i) => {
+                if (i.id === product.id) {
                     return item
                 }
                 return i
@@ -40,15 +41,22 @@ const CartProvider = ({ children }) => {
             setItems(tmp_item)
         }
         else {
-            setItems((i)=>{
+            setItems((i) => {
                 return [item, ...i]
             })
         }
     }
 
+    const remove_product = (props) => {
+
+        const { id } = props
+        const new_items = items.filter(item => item.id !== id)
+        setItems(new_items)
+    }
+
     return (
         <CartContext.Provider
-            value={{ add_product, items}}
+            value={{ add_product, remove_product, items }}
         >
             {children}
         </CartContext.Provider >

@@ -1,4 +1,4 @@
-import { getFirestore, doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, query, where, addDoc } from 'firebase/firestore';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -47,3 +47,18 @@ export const getProduct = async (id_product) => {
     throw error;
   }
 };
+
+
+export const insertData = async (item) => {
+  const db = getFirestore();
+  const refDocs = collection(db, "Sales");
+
+  try {
+    const docRef = addDoc(refDocs, item);
+    console.log('Documento agregado con ID:', docRef.id);
+    return true
+  } catch (error) {
+    console.error('Error al agregar el documento:', error);
+    return false
+  }
+}

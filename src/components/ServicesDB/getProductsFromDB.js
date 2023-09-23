@@ -1,4 +1,4 @@
-import { getAllProducts, getProduct } from '../../db/getFireStore.js'
+import { getAllProducts, getProduct, insertData } from '../../db/getFireStore.js'
 
 
 export const getImageByID = async (id) => {
@@ -19,3 +19,9 @@ export const getProductFiltered = async (filters = {}) => {
   )
   return (filter)
 };
+
+
+export const registerSale = async (id) => {
+  const product = await insertData(id)
+  return product
+}

@@ -10,7 +10,7 @@ import AddProduct from "../Product/AddProduct"
 
 function DetailProduct() {
     const filters = useParams();
-    const { isloading, iserror, item } = useGetProducts(filters.id)
+    const { isloading, item } = useGetProducts(filters.id)
 
     if (isloading) return (<LoadingSpinner />)
 
