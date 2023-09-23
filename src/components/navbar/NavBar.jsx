@@ -15,7 +15,13 @@ function NavBar() {
             navigate("/");
           }}
         >
-          CollectiLand
+            <img
+              alt=""
+              src="https://i.ibb.co/YTt2mSk/Untitled-2.png"
+              width="80"
+              height="40"
+              className="d-inline-block align-top"
+            />{' '}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

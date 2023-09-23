@@ -9,10 +9,6 @@ const useInsertSale = () => {
         registerSale(saleData).then(() => {
             setisSaving(false)
         })
-            .catch((error) => {
-                console.log(error)
-                setisSaving(false)
-            })
     }
 
     return {

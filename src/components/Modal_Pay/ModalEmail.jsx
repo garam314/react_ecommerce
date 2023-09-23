@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 
 
 
-const ModalEmail = () => {
+const ModalEmail = ({onEmailChange}) => {
     const [email, setEmail] = useState('')
     const [isValid, setIsValid] = useState(true)
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
@@ -12,6 +12,8 @@ const ModalEmail = () => {
         const { value } = e.target
         setEmail(value)
         setIsValid(emailRegex.test(value))
+
+        onEmailChange(value)
     }
 
     return (
@@ -25,9 +27,6 @@ const ModalEmail = () => {
                 isInvalid={!isValid}
                 required
             />
-            <Form.Control.Feedback type="invalid">
-                Ingrese un Email Valido
-            </Form.Control.Feedback>
         </Form.Group>
     )
 }

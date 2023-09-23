@@ -6,7 +6,7 @@ const SwalProvider = ({ children }) => {
 
     const question_yesno = (props) => {
         return new Promise((resolve) => {
-            const { title, text } = props
+            const { title, text, title_toast, text_toast } = props
             Swal.fire({
                 title: title,
                 text: text,
@@ -18,8 +18,8 @@ const SwalProvider = ({ children }) => {
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
-                        title: "Eliminado",
-                        text: "Producto quitado del Carro.",
+                        title: title_toast,
+                        text: text_toast,
                         icon: "success",
                         toast: true,
                         showConfirmButton: false,

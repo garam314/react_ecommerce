@@ -21,7 +21,7 @@ export const getProductFiltered = async (filters = {}) => {
 };
 
 
-export const registerSale = async (id) => {
-  const product = await insertData(id)
+export const registerSale = async (item) => {
+  const product = await insertData(item)
   return product
 }

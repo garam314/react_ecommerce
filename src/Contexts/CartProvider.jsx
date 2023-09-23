@@ -54,9 +54,16 @@ const CartProvider = ({ children }) => {
         setItems(new_items)
     }
 
+    const clear_localStarage = () =>{
+        const epoc = localStorage.getItem("epoc")
+        localStorage.removeItem(epoc)
+        setItems([])
+        
+    }
+
     return (
         <CartContext.Provider
-            value={{ add_product, remove_product, items }}
+            value={{ clear_localStarage, add_product, remove_product, items }}
         >
             {children}
         </CartContext.Provider >

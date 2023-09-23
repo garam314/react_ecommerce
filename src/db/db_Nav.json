@@ -53,36 +53,6 @@
                     "filter" : "category"
                 }
             ]
-        },
-        {
-            "id":3,
-            "name" :   "Model-Kit",
-            "url" : "#",
-            "submenu":[
-                {
-                    "id": 31,
-                    "name" : "Kotobukiya"
-                },
-                {
-                    "id": 32,
-                    "name" : "Good Smile Company"
-                }
-            ]
-        },
-        {
-            "id":4,
-            "name" :   "Pre-Ventas",
-            "url" : "#",
-            "submenu":[
-                {
-                    "id": 41,
-                    "name" : "Hasegawa"
-                },
-                {
-                    "id": 42,
-                    "name" : "Revell"
-                }
-            ]
         }
     ]
 }

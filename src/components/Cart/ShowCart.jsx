@@ -30,7 +30,7 @@ const ShowCart = (props) => {
 
 
     const remove_item = async () => {
-        const result = await question_yesno({ title: "Quitar Producto", text: "Esta Seguro?" })
+        const result = await question_yesno({ title: "Eliminar item", text: "Esta Seguro Que Desea Continuar?", title_toast: "Quitado", text_toast:"Producto Quitado Del Carro" })
         if (result) {
             remove_product({ id: id })
 
